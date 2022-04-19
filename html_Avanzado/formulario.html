@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulairo</title>
+
+    <!-- CSS propios -->
+    <link rel="stylesheet" href="assets/css/formulario.css">
+</head>
+<body>
+    <!-- <forms action="" method="post"></forms> -->
+    <form>
+        <input type="text" placeholder="Nombre" >
+        <input type="text" placeholder="Apellido" size="10">
+        <!-- <input type="text" minlength="6" maxlength="10"> -->
+        <input type="number" min="0" max="100" step="10">
+        <input type="date">
+        <input type="month">
+        <input type="week">
+        <input type="datetime-local">
+        <input type="date">
+        <input type="password">
+        <input type="file">
+        <input type="range" min="1" max="3">
+        <input type="checkbox" value="Hola" checked>
+        <input type="radio" name="n" value="1">
+        <input type="radio" name="n" value="2">
+        <input type="email" required>
+        <select name="menu" size="1">
+            <option>Uno</option>
+            <option value="1">Dos</option>
+            <option value="2"selected>Tres</option>
+        </select>
+        <textarea name="" id="" cols="10" rows="5"></textarea>
+        <input type="color" id="ImputColor"  value="#ff0000">
+        <input type="reset" value="Limpiar">
+        <input type="submit" value="Mandar">
+    </form>
+
+    <script>
+        const color = document.querySelector("#ImputColor")
+        console.log(color);
+
+        color.addEventListener("change", function (e) {
+            document.body.style.backgroundColor = e.target.value;
+        })
+
+    </script>
+
+    <hr>
+    <h1>Formulario</h1>
+    <form class="formulario">
+        <div class="nombre">
+            <label class="acomodoLabe" for="nombre">Nombre</label>
+            <input class="colorfondo" type="text" name="name" id="nombre" placeholder="Nombre">
+        </div>
+        <div class="apellido">
+            <label class="acomodoLabe" for="apellido">Apellido</label>
+            <input class="colorfondo" type="text" id="apellido" placeholder="Apellido">
+        </div>
+        <div class="password">
+            <label class="acomodoLabe" for="password">Contraseña</label>
+            <input class="colorfondo" type="password" id="password" required>
+        </div>
+        <div class="correo">
+            <label class="acomodoLabe" for="correo">correo</label>
+            <input class="colorfondo" type="email" required id="correo">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+    <!-- Al hr también se le puede poner un border-top/bottom: dashed -->
+    
+</body>
+</html>
