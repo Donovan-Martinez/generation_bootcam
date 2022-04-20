@@ -8,36 +8,40 @@
     <link rel="stylesheet" href="assets/css/ejercicio2.css">
 </head>
 <body>
-        <h2>Datos del comprado</h2>
+        <h2 class="h2">Datos del comprado</h2>
         <form action="For_Comprador">
-                <div class="nombre">
-                    <label for="nombre">Nombre</label>
-                    <input class="colorfon"  type="text" >
+                <div>
+                    <label class="acomodo"  for="nombre">Nombre</label>
+                    <input class="casilla" type="text" placeholder="Escribe tu nombre completo" >
 
                 </div>
                 <dir>
-                    <label for="email">Email</label>
-                    <input type="email">
+                    <label class="acomodo for="email">Email</label>
+                    <input class="casilla" type="email" placeholder="ejemplo@um.es">
                 </dir>
                 <div>
-                    <label for="telefono">Telefono</label>
-                    <input type="number">
+                    <label class="acomodo" for="telefono">Telefono</label>
+                    <input class="casilla" type="number" placeholder="Ej.+1234567890">
                 </div>
                 <div>
-                    <label for="pais">Pais</label>
-                    <input type="">
+                    <label class="acomodo" for="pais">Pais</label>
+                    <input class="casilla" type="">
                 </div>
 
         </form>
-        <h3>Datos de la tarjeta de credito</h3>
+        <h3 class="h2">Datos de la tarjeta de credito</h3>
         <form action="For_Tarjeta">
             <div>
-                <label for="numero">Numero</label>
-                <input type="text">
+                <label class="acomodo" for="numero">Numero</label>
+                <input class="casilla" type="text" placeholder="Ej. 555-4444-3333-2222">
             </div>
             <div>
-                <label for="nombre_tarjeta">Nombre</label>
-                <input type="text">
+                <label class="acomodo" for="nombre_tarjeta">Nombre</label>
+                <input class="casilla" type="text" placeholder="Nombre que figura en la tarjeta">
+            </div>
+            <hr>
+            <div>
+                <input type="submit" value="Confirmar pedido">
             </div>
 
 

@@ -8,12 +8,13 @@
 
     <!-- CSS propios -->
     <link rel="stylesheet" href="assets/css/formulario.css">
+    <script src="assets/js/main.js"></script>
 </head>
 <body>
     <!-- <forms action="" method="post"></forms> -->
     <form>
         <input type="text" placeholder="Nombre" >
-        <input type="text" placeholder="Apellido" size="10">
+        <input type="text" placeholder="Apellido">
         <!-- <input type="text" minlength="6" maxlength="10"> -->
         <input type="number" min="0" max="100" step="10">
         <input type="date">
@@ -39,19 +40,9 @@
         <input type="submit" value="Mandar">
     </form>
 
-    <script>
-        const color = document.querySelector("#ImputColor")
-        console.log(color);
-
-        color.addEventListener("change", function (e) {
-            document.body.style.backgroundColor = e.target.value;
-        })
-
-    </script>
-
     <hr>
-    <h1>Formulario</h1>
-    <form class="formulario">
+    <h1 class="formulario">Formulario</h1>
+    <form class="formulairo" id="formularioDatos">
         <div class="nombre">
             <label class="acomodoLabe" for="nombre">Nombre</label>
             <input class="colorfondo" type="text" name="name" id="nombre" placeholder="Nombre">
@@ -62,11 +53,11 @@
         </div>
         <div class="password">
             <label class="acomodoLabe" for="password">Contraseña</label>
-            <input class="colorfondo" type="password" id="password" required>
+            <input class="colorfondo" type="password" id="password" >
         </div>
         <div class="correo">
             <label class="acomodoLabe" for="correo">correo</label>
-            <input class="colorfondo" type="email" required id="correo">
+            <input class="colorfondo" type="email">
         </div>
         <div>
             <input type="submit" value="Enviar">
