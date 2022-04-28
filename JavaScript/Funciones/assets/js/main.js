@@ -9,7 +9,7 @@ function saludar(nombre = "panchito", apellido = ""){
     return `Mi nombre es ${nombre} ${apellido}`;
 }
 
-saludar("Donova", "Martinez");//la incvocacion o lamada de la funcion 
+saludar("Donovan", "Martinez");//la incvocacion o lamada de la funcion 
 
 let funcionSaludar = saludar('Felipe', 'Gomez');
 //console.log(funcionSaludar);
