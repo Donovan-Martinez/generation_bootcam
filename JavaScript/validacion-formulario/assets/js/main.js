@@ -124,6 +124,7 @@ formulario.addEventListener("submit", (e) =>{
 				new FormData(e.target)
 			)
 			console.log(datos)
+			formulario.resert()
 	
 		}
 		else{
