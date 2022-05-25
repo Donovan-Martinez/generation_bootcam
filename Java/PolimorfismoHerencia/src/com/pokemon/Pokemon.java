@@ -1,6 +1,6 @@
 package com.pokemon;
 
-public class Pokemon {
+public abstract class Pokemon {
 		//atributos
 	
 		private int id;
@@ -20,14 +20,20 @@ public class Pokemon {
 		}
 		//Metodos
 		public void comer() {
-			System.out.println(nombre + "esta comiendo");
+			System.out.println(nombre + " esta comiendo");
+		}
+		public void comer(int cantidad) {
+			System.out.println(nombre + " esta comiendo "+ cantidad + " pasaas");
 		}
 		public void atacar() {
-			System.out.println(nombre + "esta atacando");
+			System.out.println(nombre + " esta atacando");
 		}
 		public void dormir() {
-			System.out.println(nombre + "zzzzzz");
+			System.out.println(nombre + " zzzzzz");
 		}
+		
+		//Metodo Abstracto
+		public abstract void saludar(String mensaje);
 		
 		//getter setes
 		public int getId() {
@@ -59,6 +65,10 @@ public class Pokemon {
 		}
 		public void setEvolucion(boolean evolucion) {
 			this.evolucion = evolucion;
+		}
+		public void volar() {
+			// TODO Auto-generated method stub
+			
 		}
 		
 		
